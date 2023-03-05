@@ -1,0 +1,22 @@
+.Feedback-section {
+  padding: 60px;
+}
+
+.Feedback-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
+.Statistics-item {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+}
+
+.Statistics-item:not(:last-child) {
+  margin-bottom: 6px;
+}
