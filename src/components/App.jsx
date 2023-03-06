@@ -31,13 +31,17 @@ class App extends Component {
     const { good, neutral, bad } = this.state;    
      
     return (
+      <>
       <Section title="Please leave feedback">
-        <FeedbackOptions options={ ['Good', 'Neutral', 'Bad']} onLeaveFeedback={this.countTotalFeedback } />
+        <FeedbackOptions options={['Good', 'Neutral', 'Bad']} onLeaveFeedback={this.countTotalFeedback} />
+        </Section>
         
+        <Section title="Statistics">
         {totalFeedback === 0 ?
           (<Notification message="There is no feedback"/>) :
           (<Statistics good={good} neutral={neutral} bad={bad} total={totalFeedback} positivePercentage={positivePercentage} />)}      
-      </Section>
+        </Section>
+        </>
     )
   }
 }

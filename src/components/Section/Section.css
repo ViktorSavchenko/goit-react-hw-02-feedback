@@ -1,5 +1,9 @@
 .Feedback-section {
-  padding: 60px;
+  padding: 60px 60px 0 60px;
+}
+
+.Feedback-section:last-child {
+  padding: 0 60px 60px 60px;
 }
 
 .Feedback-title {
