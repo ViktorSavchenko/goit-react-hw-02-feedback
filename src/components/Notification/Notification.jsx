@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Notification.css'
 
 function Notification({ message }) { 
@@ -5,5 +6,9 @@ function Notification({ message }) {
     <h3 className="Notification-title">{message }</h3>
   )
 }
+
+Notification.propTypes = {
+  message: PropTypes.string.isRequired,
+};
 
 export default Notification;
